@@ -7,8 +7,14 @@ window.onload = function() {
   }, 5000); // 5000 milliseconds = 5 seconds
 };
 
-
-
+// script.js
+window.onload = function() {
+  setTimeout(function() {
+    document.querySelector('.loader').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    document.body.style.overflow = 'auto'; // Enable scrolling after loader is hidden
+  }, 5000); // 5000 milliseconds = 5 seconds
+};
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -432,6 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         movie.overview.toLowerCase().includes(searchTerm)
                     );
                     displayMovies(filteredMovies);
+                    
                 });
             });
         });
