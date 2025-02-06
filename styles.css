@@ -1,5 +1,7 @@
 /* styles.css */
 
+
+
 /* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,6 +13,78 @@ body {
     overflow: hidden; /* Prevent scrolling while loading */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        overflow: auto; /* Enable scrolling on smaller screens */
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .featured {
+        padding: 10px;
+    }
+
+    #search-container {
+        flex-direction: column;
+    }
+
+    #search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #search-button {
+        width: 100%;
+    }
+
+    .movie-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .like-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .like-text {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .glitch {
+        font-size: 20px;
+    }
+
+    .featured h2 {
+        font-size: 18px;
+    }
+
+    .movie-card h2 {
+        font-size: 14px;
+    }
+
+    .movie-card p {
+        font-size: 12px;
+    }
+
+    .movie-card a {
+        font-size: 14px;
+    }
+}
 /* Loader Styles */
 .loader {
     position: fixed;
