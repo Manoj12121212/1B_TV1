@@ -1,4 +1,4 @@
-<script src="https://cdn.chatbot.com/widget/plugin.js" async></script>
+
 // script.js
 window.onload = function() {
   setTimeout(function() {
